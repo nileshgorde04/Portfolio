@@ -19,28 +19,28 @@ const BlogsSection = () => {
   // Mock blog data - replace with actual Medium RSS/API integration
   const blogPosts: BlogPost[] = [
     {
-      title: "Building Scalable Web Applications with Spring Boot and React",
+      title: "From Books to Breakthroughs: The Power of Learning by Doing",
       snippet:
-        "Learn how to create robust full-stack applications using Spring Boot for the backend and React for the frontend. This comprehensive guide covers best practices, security, and deployment strategies.",
-      date: "Dec 15, 2023",
-      link: "https://medium.com/@nileshgorade2004",
-      readTime: "8 min read",
+        "In the beginning, I did what every dedicated student does, I followed the path laid before me. I studied from textbooks, completed assignments, and topped my class.",
+      date: "May 24, 2025",
+      link: "https://medium.com/@nileshgorade2004/from-books-to-breakthroughs-the-power-of-learning-by-doing-bfd66699dd0f",
+      readTime: "4 min read",
     },
     {
-      title: "Machine Learning in Production: From Model to Deployment",
+      title: "Are No-Code Platforms the End of Traditional Software Development?",
       snippet:
-        "A deep dive into deploying machine learning models in production environments. Covering containerization, monitoring, and scaling ML applications for real-world use cases.",
-      date: "Nov 28, 2023",
-      link: "https://medium.com/@nileshgorade2004",
-      readTime: "12 min read",
+        "In the last few years, no-code and low-code platforms have exploded in popularity. Tools like Bubble, Webflow, and Microsoft Power Apps allow people to build apps without writing a single line of code",
+      date: "Feb 15, 2025",
+      link: "https://medium.com/@nileshgorade2004/are-no-code-platforms-the-end-of-traditional-software-development-dc11055d7a4b",
+      readTime: "4 min read",
     },
     {
-      title: "Optimizing Database Performance in Java Applications",
+      title: "It’s More Than Just Code: Mastering Learning, Coding, and Career Growth",
       snippet:
-        "Explore advanced techniques for optimizing database queries, connection pooling, and caching strategies in Java applications. Learn how to identify and resolve performance bottlenecks.",
-      date: "Nov 10, 2023",
-      link: "https://medium.com/@nileshgorade2004",
-      readTime: "10 min read",
+        "When people think about coding, the first thing that often comes to mind is problem-solving or giving instructions to a machine. But coding is so much more than that.",
+      date: "Dec 16, 2024",
+      link: "https://medium.com/@nileshgorade2004/its-more-than-just-code-mastering-learning-coding-and-career-growth-113e6349bbb0",
+      readTime: "4 min read",
     },
   ]
 
