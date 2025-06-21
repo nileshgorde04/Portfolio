@@ -133,7 +133,15 @@ const ContactSection = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form
+                action="https://formspree.io/f/meoklvok"
+                method="POST"
+                className="space-y-4"
+              >
+                {/* Spam protection and optional redirect
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" /> */}
+
                 <div>
                   <label htmlFor="name" className="text-sm text-muted-foreground block mb-2">
                     Name
@@ -141,10 +149,8 @@ const ContactSection = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your name"
                     required
+                    placeholder="Your name"
                     className="bg-background border-border"
                   />
                 </div>
@@ -157,10 +163,8 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Your email"
                     required
+                    placeholder="Your email"
                     className="bg-background border-border"
                   />
                 </div>
@@ -172,10 +176,8 @@ const ContactSection = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your message"
                     required
+                    placeholder="Your message"
                     className="bg-background border-border min-h-[120px]"
                   />
                 </div>
@@ -184,6 +186,7 @@ const ContactSection = () => {
                   <Send className="mr-2 h-4 w-4" /> Send Message
                 </Button>
               </form>
+
             </CardContent>
           </Card>
         </div>

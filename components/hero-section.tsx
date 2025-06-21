@@ -30,13 +30,22 @@ const LeetCode = ({ className, ...props }: React.ComponentProps<"svg">) => {
   )
 }
 
-const skills = ["Java Developer", "Full Stack Engineer", "AI/ML Enthusiast", "Cloud Explorer"]
+const skills = [
+  "Java Developer",
+  "Full Stack Engineer",
+  "AI/ML Enthusiast",
+  "Cloud Explorer",
+  "DSA Problem Solver",
+  "Tech Blogger",
+  "System Design Learner"
+]
+
 
 const HeroSection = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
-  const [typingSpeed, setTypingSpeed] = useState(150)
+  const [typingSpeed, setTypingSpeed] = useState(70)
 
   useEffect(() => {
     const currentSkill = skills[currentSkillIndex]
@@ -54,7 +63,7 @@ const HeroSection = () => {
         return
       }
 
-      const delta = isDeleting ? 100 : typingSpeed
+      const delta = isDeleting ? 20 : typingSpeed
 
       setTimeout(() => {
         setDisplayText(
@@ -65,7 +74,7 @@ const HeroSection = () => {
       }, delta)
     }
 
-    const typingTimer = setTimeout(handleTyping, 100)
+    const typingTimer = setTimeout(handleTyping, 30)
     return () => clearTimeout(typingTimer)
   }, [displayText, currentSkillIndex, isDeleting, typingSpeed])
 

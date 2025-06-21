@@ -75,8 +75,6 @@
 }
 
 .typing-animation {
-  border-right: 2px solid;
-  animation: blink 0.8s infinite;
   white-space: nowrap;
   overflow: hidden;
 }
