@@ -10,6 +10,8 @@ interface Project {
   description: string
   techStack: string[]
   image: string
+  codeLink: string  // ← new
+  demoLink?: string 
 }
 
 const ProjectsSection = () => {
@@ -22,6 +24,7 @@ const ProjectsSection = () => {
         "Web application for carbon emission management in coal mines, helping companies track and reduce their environmental impact.",
       techStack: ["React", "Node.js", "PostgreSQL", "Chart.js"],
       image: "/placeholder.svg?height=300&width=500",
+      codeLink: "https://github.com/nileshgorde04/Carbon-Coal-Control",
     },
     {
       title: "Bandwidth Utilization Optimization",
@@ -29,6 +32,7 @@ const ProjectsSection = () => {
         "Implemented LSTM models to predict and optimize network bandwidth utilization, improving efficiency by 35%.",
       techStack: ["Python", "TensorFlow", "Flask", "Pandas"],
       image: "/placeholder.svg?height=300&width=500",
+      codeLink: "https://github.com/nileshgorde04/Network-Bandwidth-Utilization",
     },
     {
       title: "Diabetes Prediction Web App",
@@ -36,6 +40,7 @@ const ProjectsSection = () => {
         "Machine learning-powered web application that predicts diabetes risk based on patient data with 92% accuracy.",
       techStack: ["Java", "Spring Boot", "React", "Scikit-learn"],
       image: "/placeholder.svg?height=300&width=500",
+      codeLink: "https://github.com/nileshgorde04/bandwidth-optimization",
     },
   ]
 
@@ -102,7 +107,7 @@ const ProjectsSection = () => {
               </CardContent>
               <CardFooter className="p-6 pt-0 flex justify-between">
                 <a
-                href="https://github.com/nileshgorde04"
+                href={project.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
