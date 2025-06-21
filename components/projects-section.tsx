@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       description:
         "Web application for carbon emission management in coal mines, helping companies track and reduce their environmental impact.",
       techStack: ["React", "Node.js", "PostgreSQL", "Chart.js"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/carbon.jpg?height=300&width=500",
       codeLink: "https://github.com/nileshgorde04/Carbon-Coal-Control",
     },
     {
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       description:
         "Implemented LSTM models to predict and optimize network bandwidth utilization, improving efficiency by 35%.",
       techStack: ["Python", "TensorFlow", "Flask", "Pandas"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/bandwidth.jpg?height=300&width=500",
       codeLink: "https://github.com/nileshgorde04/Network-Bandwidth-Utilization",
     },
     {
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
       description:
         "Machine learning-powered web application that predicts diabetes risk based on patient data with 92% accuracy.",
       techStack: ["Java", "Spring Boot", "React", "Scikit-learn"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/diabetes.jpg?height=300&width=500",
       codeLink: "https://github.com/nileshgorde04/bandwidth-optimization",
     },
   ]
