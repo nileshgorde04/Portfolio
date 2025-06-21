@@ -8,6 +8,7 @@ import { ExternalLink, Calendar } from "lucide-react"
 interface BlogPost {
   title: string
   snippet: string
+  image?: string
   date: string
   link: string
   readTime: string
@@ -16,12 +17,12 @@ interface BlogPost {
 const BlogsSection = () => {
   const sectionRef = useRef<HTMLElement>(null)
 
-  // Mock blog data - replace with actual Medium RSS/API integration
   const blogPosts: BlogPost[] = [
     {
       title: "From Books to Breakthroughs: The Power of Learning by Doing",
       snippet:
         "In the beginning, I did what every dedicated student does, I followed the path laid before me. I studied from textbooks, completed assignments, and topped my class.",
+      image: "/carbon.jpg?height=300&width=500",
       date: "May 24, 2025",
       link: "https://medium.com/@nileshgorade2004/from-books-to-breakthroughs-the-power-of-learning-by-doing-bfd66699dd0f",
       readTime: "4 min read",
@@ -29,7 +30,8 @@ const BlogsSection = () => {
     {
       title: "Are No-Code Platforms the End of Traditional Software Development?",
       snippet:
-        "In the last few years, no-code and low-code platforms have exploded in popularity. Tools like Bubble, Webflow, and Microsoft Power Apps allow people to build apps without writing a single line of code",
+        "No-code and low-code platforms have exploded in popularity. Tools like Bubble, Webflow, and Microsoft Power Apps allow people to build apps without writing a single line of code.",
+      image: "/bandwidth.jpg?height=300&width=500",
       date: "Feb 15, 2025",
       link: "https://medium.com/@nileshgorade2004/are-no-code-platforms-the-end-of-traditional-software-development-dc11055d7a4b",
       readTime: "4 min read",
@@ -37,7 +39,8 @@ const BlogsSection = () => {
     {
       title: "It’s More Than Just Code: Mastering Learning, Coding, and Career Growth",
       snippet:
-        "When people think about coding, the first thing that often comes to mind is problem-solving or giving instructions to a machine. But coding is so much more than that.",
+        "When people think about coding, the first thing that comes to mind is problem-solving. But it's also about learning mindset and career growth.",
+      image: "/diabetes.jpg?height=300&width=500",
       date: "Dec 16, 2024",
       link: "https://medium.com/@nileshgorade2004/its-more-than-just-code-mastering-learning-coding-and-career-growth-113e6349bbb0",
       readTime: "4 min read",
@@ -87,6 +90,16 @@ const BlogsSection = () => {
               key={index}
               className="project-card glass-card border-primary/20 overflow-hidden h-full flex flex-col"
             >
+              {post.image && (
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+              )}
+
               <CardContent className="p-6 flex-grow">
                 <h3 className="text-xl font-semibold mb-3 text-primary line-clamp-2">{post.title}</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-3">{post.snippet}</p>
@@ -97,19 +110,25 @@ const BlogsSection = () => {
                   <span>{post.readTime}</span>
                 </div>
               </CardContent>
+
               <CardFooter className="p-6 pt-0">
-                <Button asChild className="w-full bg-primary hover:bg-primary/80 text-primary-foreground">
-                  <a href={post.link} target="_blank" rel="noopener noreferrer">
+                <a href={post.link} target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full bg-primary hover:bg-primary/80 text-primary-foreground">
                     <ExternalLink className="mr-2 h-4 w-4" /> Read More
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
         </div>
 
         <div className="text-center">
-          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="border-primary text-primary hover:bg-primary/10"
+          >
             <a href="https://medium.com/@nileshgorade2004" target="_blank" rel="noopener noreferrer">
               View All Blogs
             </a>

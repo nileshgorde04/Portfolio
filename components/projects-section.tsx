@@ -10,7 +10,7 @@ interface Project {
   description: string
   techStack: string[]
   image: string
-  codeLink: string  // ← new
+  codeLink: string
   demoLink?: string 
 }
 
