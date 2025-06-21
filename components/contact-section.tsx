@@ -98,7 +98,7 @@ const ContactSection = () => {
                 <h4 className="text-lg font-medium mb-4">Connect with me</h4>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/nileshgorde04"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
@@ -107,7 +107,7 @@ const ContactSection = () => {
                     <span className="sr-only">GitHub</span>
                   </a>
                   <a
-                    href="https://linkedin.com/"
+                    href="https://www.linkedin.com/in/nilesh-gorade-6aa32a224/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
