@@ -101,9 +101,15 @@ const ProjectsSection = () => {
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0 flex justify-between">
+                <a
+                href="https://github.com/nileshgorde04"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                 <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
                   <Github className="mr-2 h-4 w-4" /> Code
                 </Button>
+                </a>
                 <Button size="sm" className="bg-primary hover:bg-primary/80 text-primary-foreground">
                   <ExternalLink className="mr-2 h-4 w-4" /> Demo
                 </Button>
