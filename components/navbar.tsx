@@ -101,12 +101,12 @@ const Navbar = () => {
           {/* Social Icons */}
           <div className="flex items-center space-x-2">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/nileshgorde04" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/nilesh-gorade-6aa32a224/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>
