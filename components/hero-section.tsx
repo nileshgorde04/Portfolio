@@ -93,9 +93,15 @@ const HeroSection = () => {
               <p className="text-lg md:text-xl text-primary typing-animation">{displayText}</p>
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">
                 <FileText className="mr-2 h-4 w-4" /> View Resume
               </Button>
+              </a>
               <a
                 href="https://github.com/nileshgorde04"
                 target="_blank"
