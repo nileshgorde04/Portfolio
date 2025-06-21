@@ -123,9 +123,15 @@ const HeroSection = () => {
                 <MediumIcon className="mr-2 h-4 w-4" /> Medium
               </Button>
               </a>
+              <a
+                href="https://leetcode.com/u/nileshgorade/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <LeetCode className="mr-2 h-4 w-4" /> LeetCode
               </Button>
+              </a>
             </div>
           </div>
 
