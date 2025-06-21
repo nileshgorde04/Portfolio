@@ -96,12 +96,25 @@ const HeroSection = () => {
               <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">
                 <FileText className="mr-2 h-4 w-4" /> View Resume
               </Button>
+              <a
+                href="https://github.com/nileshgorde04"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <Github className="mr-2 h-4 w-4" /> GitHub
               </Button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nilesh-gorade-6aa32a224/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
               </Button>
+              </a>
+              
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <MediumIcon className="mr-2 h-4 w-4" /> Medium
               </Button>
