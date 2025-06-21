@@ -22,7 +22,7 @@ const BlogsSection = () => {
       title: "From Books to Breakthroughs: The Power of Learning by Doing",
       snippet:
         "In the beginning, I did what every dedicated student does, I followed the path laid before me. I studied from textbooks, completed assignments, and topped my class.",
-      image: "/carbon.jpg?height=300&width=500",
+      image: "/blog1.png?height=300&width=500",
       date: "May 24, 2025",
       link: "https://medium.com/@nileshgorade2004/from-books-to-breakthroughs-the-power-of-learning-by-doing-bfd66699dd0f",
       readTime: "4 min read",
@@ -31,7 +31,7 @@ const BlogsSection = () => {
       title: "Are No-Code Platforms the End of Traditional Software Development?",
       snippet:
         "No-code and low-code platforms have exploded in popularity. Tools like Bubble, Webflow, and Microsoft Power Apps allow people to build apps without writing a single line of code.",
-      image: "/bandwidth.jpg?height=300&width=500",
+      image: "/blog2.png?height=300&width=500",
       date: "Feb 15, 2025",
       link: "https://medium.com/@nileshgorade2004/are-no-code-platforms-the-end-of-traditional-software-development-dc11055d7a4b",
       readTime: "4 min read",
@@ -40,7 +40,7 @@ const BlogsSection = () => {
       title: "It’s More Than Just Code: Mastering Learning, Coding, and Career Growth",
       snippet:
         "When people think about coding, the first thing that comes to mind is problem-solving. But it's also about learning mindset and career growth.",
-      image: "/diabetes.jpg?height=300&width=500",
+      image: "/blog3.png?height=300&width=500",
       date: "Dec 16, 2024",
       link: "https://medium.com/@nileshgorade2004/its-more-than-just-code-mastering-learning-coding-and-career-growth-113e6349bbb0",
       readTime: "4 min read",
