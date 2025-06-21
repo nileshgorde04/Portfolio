@@ -114,10 +114,15 @@ const HeroSection = () => {
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
               </Button>
               </a>
-              
+              <a
+                href="https://medium.com/@nileshgorade2004"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <MediumIcon className="mr-2 h-4 w-4" /> Medium
               </Button>
+              </a>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <LeetCode className="mr-2 h-4 w-4" /> LeetCode
               </Button>
