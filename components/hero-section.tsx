@@ -103,7 +103,7 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="/resume.pdf"
+                href="/resume-off-campus.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

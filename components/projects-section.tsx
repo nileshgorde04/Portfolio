@@ -19,6 +19,14 @@ const ProjectsSection = () => {
 
   const projects: Project[] = [
     {
+      title: "Auth-as-a-Service(AaaS)",
+      description:
+        "Designed and developed a plug-and-play Auth-as-a-Service platform with OAuth2, JWT, RBAC, and activity logging using Spring Boot, PostgreSQL, and Next.js.",
+      techStack: ["Java", "Spring Boot", "Next.js", "Oauth2", "JWT", "PostgreSQL"],
+      image: "/aaas.jpg?height=300&width=500",
+      codeLink: "https://github.com/nileshgorde04/",
+    },
+    {
       title: "Carbon Coal Control",
       description:
         "Web application for carbon emission management in coal mines, helping companies track and reduce their environmental impact.",
@@ -33,15 +41,7 @@ const ProjectsSection = () => {
       techStack: ["Python", "TensorFlow", "Flask", "Pandas"],
       image: "/bandwidth.jpg?height=300&width=500",
       codeLink: "https://github.com/nileshgorde04/Network-Bandwidth-Utilization",
-    },
-    {
-      title: "Diabetes Prediction Web App",
-      description:
-        "Machine learning-powered web application that predicts diabetes risk based on patient data with 92% accuracy.",
-      techStack: ["Java", "Spring Boot", "React", "Scikit-learn"],
-      image: "/diabetes.jpg?height=300&width=500",
-      codeLink: "https://github.com/nileshgorde04/bandwidth-optimization",
-    },
+    }, 
   ]
 
   useEffect(() => {
