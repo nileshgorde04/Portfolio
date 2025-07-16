@@ -44,18 +44,20 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              I am a passionate Full Stack Developer with expertise in Java, Spring Boot, React, and Node.js. My journey
-              in software development has been driven by a deep interest in building scalable, high-performance
-              applications that solve real-world problems.
+              I’m a results-driven Full Stack Developer with expertise in Java, Spring Boot, React, Node.js, and PostgreSQL,
+              passionate about building scalable, secure, and real-time systems. With a strong foundation in AI/ML and Cloud Computing, 
+              I’ve delivered production-grade applications blending backend efficiency with modern UI/UX.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              With a strong foundation in AI/ML technologies, I&apos;ve worked on various projects ranging from
-              predictive analytics to web applications. I was honored to be a Runner-Up in the MIT-WPU Hackathon 2022,
-              where I demonstrated my ability to deliver innovative solutions under pressure.
+              Currently in the second year of my MCA at MIT-WPU, where I topped the first year, and with a strong academic background in my bachelor's degree, 
+              I combine academic excellence with hands-on experience. I’ve built and contributed to real-world systems across diverse domains -
+              from enterprise platforms to intelligent applications - applying deep technical skills and a product-thinking mindset.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I am constantly exploring new technologies and methodologies to enhance my skills and stay at the
-              forefront of the rapidly evolving tech landscape.
+              From securing the Runner-Up title at MIT-WPU Hackathon to solving 500+ DSA problems across LeetCode, GFG, and HackerRank, 
+              I consistently push myself to solve real-world problems through code. 
+              I'm currently diving deeper into cloud-native development, contributing to open source, 
+              and actively engaging the dev community with 200K+ impressions on LinkedIn.
             </p>
           </div>
 
@@ -68,12 +70,15 @@ const AboutSection = () => {
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="font-medium">MCA</p>
+                    <p className="font-medium">Masters in Computer Application</p>
+            
+                    <p className="text-muted-foreground">CGPA: 9.33</p>
                     <p className="text-muted-foreground">MIT World Peace University, Pune</p>
                     <p className="text-sm text-muted-foreground">Current</p>
+            
                   </div>
                   <div>
-                    <p className="font-medium">BCS</p>
+                    <p className="font-medium">Bachelor's Degree, Computer Science</p>
                     <p className="text-muted-foreground">CGPA: 9.93</p>
                   </div>
                 </div>
