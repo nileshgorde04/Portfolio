@@ -121,7 +121,7 @@ const HeroSection = () => {
               </Button>
               </a>
               <a
-                href="https://www.linkedin.com/in/nilesh-gorade-6aa32a224/"
+                href="https://www.linkedin.com/in/nileshgorade/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

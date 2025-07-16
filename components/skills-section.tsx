@@ -36,9 +36,9 @@ const SkillsSection = () => {
       color: "text-orange-500",
     },
     {
-      name: "Database & Tools",
+      name: "Database & Tools", 
       icon: <Database className="h-6 w-6" />,
-      skills: ["PostgreSQL", "MySQL", "Git", "GitHub", "Postman", "Azure", "IntelliJ"],
+      skills: ["PostgreSQL", "MySQL", "Git", "GitHub", "Postman", "IntelliJ"],
       color: "text-purple-500",
     },
   ]

@@ -107,7 +107,7 @@ const ContactSection = () => {
                     <span className="sr-only">GitHub</span>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/nilesh-gorade-6aa32a224/"
+                    href="https://www.linkedin.com/in/nileshgorade/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
