@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Database, Server, Wrench } from "lucide-react"
+import { Code, Layers, Database, ServerCog } from "lucide-react"
 
 interface SkillCategory {
   name: string
@@ -18,28 +18,28 @@ const SkillsSection = () => {
 
   const skillCategories: SkillCategory[] = [
     {
-      name: "Frontend",
+      name: "Languages",
       icon: <Code className="h-6 w-6" />,
-      skills: ["React", "HTML", "CSS", "JavaScript"],
+      skills: ["Java", "Python", "C++", "JavaScript", "SQL"],
       color: "text-blue-500",
     },
     {
-      name: "Backend",
-      icon: <Server className="h-6 w-6" />,
-      skills: ["Java", "Spring Boot", "Node.js"],
+      name: "Frameworks",
+      icon: <Layers className="h-6 w-6" />,
+      skills: ["Spring Boot", "React.js", "Node.js", "Express.js"],
       color: "text-green-500",
     },
     {
-      name: "Database",
-      icon: <Database className="h-6 w-6" />,
-      skills: ["MySQL", "PostgreSQL"],
-      color: "text-purple-500",
+      name: "Backend",                                                                                                                                                        
+      icon: <ServerCog className="h-6 w-6" />,
+      skills: ["RESTful APIs", "Microservices", "OAuth 2.0", "MVC Architecture"],
+      color: "text-orange-500",
     },
     {
-      name: "Others",
-      icon: <Wrench className="h-6 w-6" />,
-      skills: ["Git/GitHub", "Postman", "Python", "Cloud Computing"],
-      color: "text-orange-500",
+      name: "Database & Tools",
+      icon: <Database className="h-6 w-6" />,
+      skills: ["PostgreSQL", "MySQL", "Git", "GitHub", "Postman", "Azure", "IntelliJ"],
+      color: "text-purple-500",
     },
   ]
 
