@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, FileText } from "lucide-react"
@@ -10,6 +9,7 @@ import Image from "next/image"
 
 // Custom LeetCode icon component
 const LeetCode = ({ className, ...props }: React.ComponentProps<"svg">) => {
+  // ... (rest of the LeetCode component code remains the same)
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -37,17 +37,24 @@ const skills = [
   "Cloud Explorer",
   "DSA Problem Solver",
   "Tech Blogger",
-  "System Design Learner"
+  "System Design Learner",
 ]
-
 
 const HeroSection = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
   const [typingSpeed, setTypingSpeed] = useState(70)
+  const [isMounted, setIsMounted] = useState(false); // Add this state
 
   useEffect(() => {
+    setIsMounted(true); // Set to true when component mounts on the client
+  }, []);
+
+
+  useEffect(() => {
+    if (!isMounted) return; // Don't run the effect on the server
+
     const currentSkill = skills[currentSkillIndex]
 
     const handleTyping = () => {
@@ -76,10 +83,11 @@ const HeroSection = () => {
 
     const typingTimer = setTimeout(handleTyping, 30)
     return () => clearTimeout(typingTimer)
-  }, [displayText, currentSkillIndex, isDeleting, typingSpeed])
+  }, [displayText, currentSkillIndex, isDeleting, typingSpeed, isMounted]) // Add isMounted to dependency array
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 px-4 relative overflow-hidden">
+      {/* ... (rest of the JSX remains the same) */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted/20 z-0"></div>
       <div className="absolute inset-0 opacity-10 dark:opacity-10">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary rounded-full filter blur-[100px]"></div>
@@ -99,7 +107,7 @@ const HeroSection = () => {
               Building high-performance applications with Java, Spring Boot, React, and AI/ML.
             </p>
             <div className="h-8 md:h-10">
-              <p className="text-lg md:text-xl text-primary typing-animation">{displayText}</p>
+              {isMounted && <p className="text-lg md:text-xl text-primary typing-animation">{displayText}</p>}
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
               <a
