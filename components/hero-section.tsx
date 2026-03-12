@@ -129,7 +129,7 @@ const HeroSection = () => {
               </Button>
               </a>
               <a
-                href="https://www.linkedin.com/in/nileshgorade/"
+                href="https://www.linkedin.com/in/nileshgorade04/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -24,6 +24,12 @@ const AchievementsSection = () => {
 
   const awards: Achievement[] = [
     {
+      title: "Gold Medalist",
+      organization: "MIT-WPU",
+      year: "2025",
+      description: "Awarded for securing First Rank in the First Year of the Master of Computer Applications (MCA) program with outstanding academic performance."
+    },
+    {
       title: "Silver Medalist",
       organization: "MIT-WPU",
       year: "2023",

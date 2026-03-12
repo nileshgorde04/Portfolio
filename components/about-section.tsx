@@ -57,7 +57,7 @@ const AboutSection = () => {
               From securing the Runner-Up title at MIT-WPU Hackathon to solving 500+ DSA problems across LeetCode, GFG, and HackerRank, 
               I consistently push myself to solve real-world problems through code. 
               I'm currently diving deeper into cloud-native development, contributing to open source, 
-              and actively engaging the dev community with 200K+ impressions on LinkedIn.
+              and actively engaging the dev community with 300K+ impressions on LinkedIn.
             </p>
           </div>
 
